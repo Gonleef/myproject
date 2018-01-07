@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head %}
+	{% for style in css %}
+		<link rel="stylesheet" href="/_static/{{ style }}.css"/>
+	{% endfor %}
+{% endblock %}
+
+{% block body %}
+	<a href="../index.html">Ne abs</a>
+		<br>
+		<a href="https://github.com/Gonleef/myproject/blob/master/l4/index.html">Abs</a>
+	
+	{% for script in js %}
+		<link rel="stylesheet" href="/_static/{{ script }}.js"/>
+	{% endfor %}
+{% endblock %}
